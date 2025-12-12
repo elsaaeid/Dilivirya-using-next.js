@@ -3,6 +3,7 @@
     alert('You have 3 new notifications!');
   };
 import React, { useRef } from 'react';
+import Image from 'next/image';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { HiBars3BottomRight } from "react-icons/hi2";
 
@@ -61,7 +62,7 @@ export const Navbar = ({ onMenuToggle }) => {
     <nav id="navbar" className="navbar w-full">
       <div className="top-nav w-full flex flex-row justify-content-between align-items-center d-sm-flex d-md-none d-lg-none d-xl-none d-xxl-none">
         <span className="navbar-brand mb-0 h1">
-          <img src="assets/images/logo.png" alt="logo" />
+          <Image src="/assets/images/logo.png" alt="logo" width={40} height={40} />
         </span>
         <a className="btn btn-gold" role="button" id="menu-toggle" onClick={onMenuToggle}><HiBars3BottomRight /></a>
       </div>
@@ -96,7 +97,7 @@ export const Navbar = ({ onMenuToggle }) => {
           <div className="user-menu">
             <div className="d-flex align-items-center">
               <div className="flex-shrink-0 user-image">
-                <img src="/assets/images/users/user.png" alt="user image" />
+                <Image src="/assets/images/users/user.png" alt="user image" width={40} height={40} />
               </div>
               <div className="flex-grow-1 mx-1">
                 <span className="user-name">User</span>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Image from 'next/image';
 import Layout from '../components/Layout';
 
 const initialOrderItems = [
@@ -51,7 +52,7 @@ export default function OrdersItemPage({ sidebarOpen, handleMenuToggle }) {
             <tbody>
               {orderItems.map((item, idx) => (
                 <tr key={idx}>
-                  <td><img src={item.img} alt="product" /></td>
+                  <td><Image src={item.img} alt="product" width={40} height={40} /></td>
                   <td>{item.description}</td>
                   <td className="d-flex flex-column">{item.unitPrice}</td>
                   <td>{item.qty}</td>

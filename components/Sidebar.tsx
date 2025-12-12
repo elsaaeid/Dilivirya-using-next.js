@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react'
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -19,7 +20,7 @@ export const Sidebar = ({ open }: { open: boolean }) => {
   return (
     <div id="sidebar" className={`sidebar${open ? ' open' : ''}`}>
       <div className="logo-wrapper text-center">
-        <img src="/assets/images/logo.png" alt="logo" />
+        <Image src="/assets/images/logo.png" alt="logo" width={40} height={40} />
         <h4 className="text-light">Dilivirya</h4>
       </div>
       <ul className="side-list list-unstyled text-light">
