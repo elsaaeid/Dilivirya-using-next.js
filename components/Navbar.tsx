@@ -61,7 +61,7 @@ export const Navbar = ({ onMenuToggle }) => {
     <nav id="navbar" className="navbar w-full">
       <div className="top-nav w-full flex flex-row justify-content-between align-items-center d-sm-flex d-md-none d-lg-none d-xl-none d-xxl-none">
         <span className="navbar-brand mb-0 p-2">
-          <img src="assets/images/logo.png" alt="logo" />
+          <img src="/assets/images/logo.png" alt="logo" />
         </span>
         <a className="btn btn-gold" role="button" id="menu-toggle" onClick={onMenuToggle}><HiBars3BottomRight /></a>
       </div>
