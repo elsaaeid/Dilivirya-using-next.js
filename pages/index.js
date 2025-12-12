@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
-import { Home } from "./Home";
+import Home from "./Home";
 
 
 export default function HomePage({ sidebarOpen, handleMenuToggle }) {
