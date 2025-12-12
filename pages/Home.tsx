@@ -7,7 +7,7 @@ import { ProductsContent } from "../components/ProductsContent";
 import { OrdersContent } from "../components/OrdersContent";
 import { ViewsContent } from "../components/ViewsContent";
 
-export const Home = () => {
+const Home = () => {
     const cards = [
         {
             id: 'cardOrders',
@@ -59,4 +59,7 @@ export const Home = () => {
       </div>
     </>
   )
+
 }
+
+export default Home;
