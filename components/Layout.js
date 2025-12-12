@@ -9,7 +9,7 @@ const Layout = ({children, sidebarOpen, handleMenuToggle}) => {
   return (
     <div className="page-wrapper">
       {/* Sidebar */}
-      <Sidebar open={sidebarOpen} />
+      <Sidebar open={sidebarOpen} handleMenuToggle={handleMenuToggle} />
       {/* Page content */}
       <div id="page-content" className="page-content">
         {/* NavBar */}

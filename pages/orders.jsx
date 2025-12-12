@@ -39,7 +39,7 @@ export default function OrdersPage({ sidebarOpen, handleMenuToggle }) {
 
   return (
     <Layout sidebarOpen={sidebarOpen} handleMenuToggle={handleMenuToggle}>
-      <div className="header-wrapper mb-2 flex flex-row justify-around items-center">
+      <div className="header-wrapper my-2 flex flex-row justify-around items-center">
         <div className="page-title flex flex-row justify-around items-center">
           <h3>Orders</h3>
         </div>
