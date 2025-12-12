@@ -1,0 +1,37 @@
+/*-------------------------overview-------------------------------*/
+.subCard {
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.subCard h5.card-title i {
+  color: #FFC107;
+  font-size: 25px;
+  font-weight: 500;
+}
+.subCard h5.card-title span {
+  margin-inline: 14px;
+}
+
+span.countOrders {
+  font-weight: bold;
+  margin-inline: 7px;
+}
+
+span.upPer {
+  color: #0ae50a;
+}
+
+.subCard.overview:hover {
+  background-color: #7952B3;
+  color: #fff;
+  box-shadow: 0 15px 20px -3px rgba(171, 68, 255, 0.35);
+  transition: 0.3 all ease-in-out;
+}
+
+.active {
+  background-color: #7952B3;
+  color: #fff;
+  box-shadow: 0 15px 20px -3px rgba(171, 68, 255, 0.35);
+  transition: 0.3 all ease-in-out;
+}

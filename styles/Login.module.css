@@ -1,0 +1,52 @@
+/* Minimal styles for admin login */
+.container {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+	background: var(--grey, #f5f7fb);
+}
+
+.wrapper {
+	width: 100%;
+	max-width: 420px;
+	background: var(--bg, #ffffff);
+	padding: 2rem;
+	border-radius: 8px;
+	box-shadow: 0 8px 20px rgba(16,24,40,0.08);
+}
+
+.title {
+	margin: 0 0 1rem 0;
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: var(--black, #0f172a);
+	text-align: center;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+}
+
+.input {
+	width: 100%;
+	padding: 0.75rem 0.9rem;
+	border: 1px solid var(--grey-dark, #e6e6e6);
+	border-radius: 6px;
+	font-size: 0.95rem;
+	color: var(--black, #0f172a);
+	background: var(--main-color, #fff);
+}
+.error {
+	margin-top: 0.75rem;
+	color: var(--red, #b00020);
+	font-size: 0.9rem;
+	text-align: center;
+}
+
+@media (max-width: 480px) {
+	.wrapper { padding: 1rem; }
+}

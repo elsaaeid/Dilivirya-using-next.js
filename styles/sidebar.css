@@ -1,0 +1,179 @@
+/* Sidebar styles extracted from globals.css */
+.sidebar {
+  background-color: #7952B3;
+  min-height: 100vh;
+  width: 20%;
+}
+.sidebar .logo-wrapper {
+  padding: 50px 0;
+}
+.sidebar .logo-wrapper h4 {
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+.sidebar .side-list li .main-link {
+  display: flex;
+  padding-right: 20px;
+  position: relative;
+  text-decoration: none !important;
+}
+.sidebar .side-list li .main-link .icon {
+  width: 50px;
+  height: 40px;
+  display: inline-block;
+  position: relative;
+}
+.sidebar .side-list li .main-link .icon:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  border-radius: 3px;
+  transform: translate(50%, 50%);
+  background-repeat: no-repeat;
+  background-image: url("/assets/images/sprite-sheet.png");
+}
+.sidebar .side-list li .main-link .icon.icon-dashboard:before {
+  background-position: 0px 0px;
+}
+.sidebar .side-list li .main-link .icon.icon-orders:before {
+  background-position: -40px 0px;
+}
+.sidebar .side-list li .main-link .icon.icon-admins:before {
+  background-position: -80px 0px;
+}
+.sidebar .side-list li .main-link .icon.icon-inventory:before {
+  background-position: -120px 0px;
+}
+.sidebar .side-list li .main-link .icon.icon-Marketing:before {
+  background-position: -160px 0px;
+}
+.sidebar .side-list li .main-link .icon.icon-Clients:before {
+  background-position: 0px -20px;
+}
+.sidebar .side-list li .main-link .icon.icon-stories:before {
+  background-position: -40px -20px;
+}
+.sidebar .side-list li .main-link .icon.icon-profile:before {
+  background-position: -80px -20px;
+}
+.sidebar .side-list li .main-link .icon.icon-customer:before {
+  background-position: -120px -20px;
+}
+.sidebar .side-list li .main-link .icon.icon-settings:before {
+  background-position: -160px -20px;
+}
+.sidebar .side-list li .main-link .text {
+  line-height: 40px;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.sidebar .side-list li .main-link:hover, .sidebar .side-list li .main-link.active {
+  background-color: #b789ff;
+}
+.sidebar .side-list li .main-link:hover .icon, .sidebar .side-list li .main-link.active .icon {
+  border-left: 4px solid #FFC107;
+}
+.sidebar .side-list li .main-link:hover .icon:before, .sidebar .side-list li .main-link.active .icon:before {
+  background-color: #fff;
+}
+.sidebar .side-list li .main-link:hover .icon.icon-dashboard:before, .sidebar .side-list li .main-link.active .icon.icon-dashboard:before {
+  background-position: -20px 0px;
+}
+.sidebar .side-list li .main-link:hover .icon.icon-orders:before, .sidebar .side-list li .main-link.active .icon.icon-orders:before {
+  background-position: -60px 0px;
+}
+.sidebar .side-list li .main-link:hover .icon.icon-admins:before, .sidebar .side-list li .main-link.active .icon.icon-admins:before {
+  background-position: -100px 0px;
+}
+.sidebar .side-list li .main-link:hover .icon.icon-inventory:before, .sidebar .side-list li .main-link.active .icon.icon-inventory:before {
+  background-position: -140px 0px;
+}
+.sidebar .side-list li .main-link:hover .icon.icon-Marketing:before, .sidebar .side-list li .main-link.active .icon.icon-Marketing:before {
+  background-position: -180px 0px;
+}
+.sidebar .side-list li .main-link:hover .icon.icon-Clients:before, .sidebar .side-list li .main-link.active .icon.icon-Clients:before {
+  background-position: -20px -20px;
+}
+.sidebar .side-list li .main-link:hover .icon.icon-stories:before, .sidebar .side-list li .main-link.active .icon.icon-stories:before {
+  background-position: -60px -20px;
+}
+.sidebar .side-list li .main-link:hover .icon.icon-profile:before, .sidebar .side-list li .main-link.active .icon.icon-profile:before {
+  background-position: -100px -20px;
+}
+.sidebar .side-list li .main-link:hover .icon.icon-customer:before, .sidebar .side-list li .main-link.active .icon.icon-customer:before {
+  background-position: -140px -20px;
+}
+.sidebar .side-list li .main-link:hover .icon.icon-settings:before, .sidebar .side-list li .main-link.active .icon.icon-settings:before {
+  background-position: -180px -20px;
+}
+.sidebar .side-list li.dropdown .main-link:after {
+  content: '';
+  border: 0;
+  width: 20px;
+  height: 20px;
+  transform: translate(50%, 50%) scale(0.4);
+  background-repeat: no-repeat;
+  margin-left: auto;
+  background-image: url("/assets/images/sprite-sheet.png");
+  background-position: -100px -180px;
+}
+.sidebar .side-list li.dropdown .main-link.collapsed:after {
+  background-position: -80px -180px;
+}
+.sidebar .side-list li.dropdown ul {
+  padding-left: 60px;
+}
+.sidebar .side-list li.dropdown ul li a {
+  color: #fff;
+  display: block;
+}
+.sidebar .side-list li.dropdown ul li a:hover, .sidebar .side-list li.dropdown ul li a:active {
+  color: #FFC107;
+}
+.sidebar .side-list li.dropdown ul li:hover, .sidebar .side-list li.dropdown ul li:active {
+  color: #FFC107;
+}
+
+
+@media (max-width: 991px) {
+  .sidebar .logo-wrapper {
+    padding: 20px 0;
+  }
+  .sidebar {
+    width: 40%;
+  }
+}
+@media (max-width: 767px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 0.9s ease-in-out;
+    z-index: 103;
+    border-radius: 0 20px 20px 0;
+  }
+  .sidebar .logo-wrapper {
+    padding: 10px 0;
+  }
+  .sidebar.open {
+    transform: translateX(0%);
+    transition-property: transform;
+  }
+}
+@media (max-width: 480px) {
+  .sidebar .side-list li .main-link .text {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 280px) {
+  .sidebar {
+    width: 36%;
+  }
+
+}
