@@ -131,7 +131,7 @@ export default function AdminLogin({ sidebarOpen, handleMenuToggle }) {
               autoComplete="current-password"
             />
 
-            <button className={styles.button} type="submit" disabled={loading}>
+            <button className="button" type="submit" disabled={loading}>
               {loading ? 'Signing in...' : 'Sign In'}
             </button>
           </form>

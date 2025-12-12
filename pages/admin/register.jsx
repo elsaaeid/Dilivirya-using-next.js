@@ -93,7 +93,7 @@ export default function AdminRegister({ sidebarOpen, handleMenuToggle }) {
               <small style={{ color: passwordChecks.length ? 'green' : '#666' }}>{passwordChecks.length ? '✓' : '•'} At least 6 characters</small>
             </div>
 
-            <button className={styles.button} type="submit" disabled={loading}>{loading ? 'Creating...' : 'Sign up'}</button>
+            <button className="button" type="submit" disabled={loading}>{loading ? 'Creating...' : 'Sign up'}</button>
             {error && <div className={styles.error}>{error}</div>}
           </form>
         </div>
