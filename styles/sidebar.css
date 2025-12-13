@@ -73,9 +73,11 @@
 }
 .sidebar .side-list li .main-link:hover, .sidebar .side-list li .main-link.active {
   background-color: #b789ff;
+  transition: 0.5s ease-in-out;
 }
 .sidebar .side-list li .main-link:hover .icon, .sidebar .side-list li .main-link.active .icon {
   border-left: 4px solid #FFC107;
+  transition: 0.5s ease-in-out;
 }
 .sidebar .side-list li .main-link:hover .icon:before, .sidebar .side-list li .main-link.active .icon:before {
   background-color: #fff;

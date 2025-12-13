@@ -21,17 +21,20 @@ span.countOrders {
 span.upPer {
   color: #0ae50a;
 }
+.subCard.overview {
+  transition-property: background-color, color, box-shadow;
+}
 
 .subCard.overview:hover {
   background-color: #7952B3;
   color: #fff;
   box-shadow: 0 15px 20px -3px rgba(171, 68, 255, 0.35);
-  transition: 0.3 all ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .active {
   background-color: #7952B3;
   color: #fff;
   box-shadow: 0 15px 20px -3px rgba(171, 68, 255, 0.35);
-  transition: 0.3 all ease-in-out;
+  transition: 0.5s ease-in-out;
 }
